@@ -1,0 +1,123 @@
+:root {
+    /* Primary: */
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral: */
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10vh auto;
+    width: 440px;
+}
+.content {
+    background-color: var(--very-pale-blue);
+    border-radius: 0 0 2vh 2vh;
+}
+
+/* Image */
+img {
+    width: 100%;
+    display: block;
+    border-radius: 2vh 2vh 0 0;
+}
+
+/* Info */
+.info {
+    margin: 5vh;
+}
+
+.title, .description {
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 900;
+}
+.description {
+    color: var(--desaturated-blue);
+    margin: 2vh 0;
+}
+
+/* Plan */
+.plan {
+    background-color: hsla(225, 100%, 94%, 0.4);
+    border-radius: 2vh;
+    padding: 2vh;
+}
+.plan-price {
+    display: flex;
+    align-items: center;
+}
+.plan-price p {
+    margin: 0 10vh 0 2vh;
+    color: var(--dark-blue);
+}
+.plan-price b {
+    font-weight: 900;
+}
+.plan-price span {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+.plan-price a {
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+.plan-price a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-payment {
+    display: flex;
+    flex-direction: column;
+    margin: 4vh 0;
+}
+
+.proceed-payment {
+    padding: 2vh;
+    margin-bottom: 2vh;
+    font-size: 13px;
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 1.2vh;
+    box-shadow: 0 15px 15px hsl(245, 93%, 89%);
+}
+.proceed-payment:hover {
+    opacity: 0.7;
+}
+.cancel-order {
+    border: none;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 14px;
+    margin: 1vh auto;
+}
+.cancel-order:hover {
+    color: var(--dark-blue);
+}
